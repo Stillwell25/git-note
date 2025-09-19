@@ -11,4 +11,9 @@
  **git config –global core. editor "code --wait"**    
  Kiểm tra cài đặt:  
  **git config -list**    
- 
+ - Git Alias  
+Thiết lập bí danh cho mỗi lệnh:  
+**git config –global alias.co checkout**      
+**git config –global alias.br branch**     
+**git config –global alias.ci commit**    
+**git config –global alias.st status**    
