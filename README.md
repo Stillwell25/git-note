@@ -1,7 +1,7 @@
 # Git Tutorial
 
 1.Cấu hình Git  
--Cấu hình Git  
+- Cấu hình Git  
  Lấy và đặt các biến cấu hình để kiểm soát tất cả các khía cạnh của giao diện và hoạt động của Git.  
  Đặt tên:  
  **git config –global user.name “Tên người dùng”**  
