@@ -6,9 +6,9 @@
  Đặt tên:  
  **git config –global user.name “Tên người dùng”**  
  Đặt email:  
- git config –global user.email “cafedevn@gmail.com”  
- Đặt trình soạn thảo mặc định:  
- git config –global core. editor Vim  
+ **git config –global user.email “hmq@gmail.com”**  
+ Đặt trình soạn thảo mặc định (opinion):  
+ **git config –global core. editor "code --wait"**    
  Kiểm tra cài đặt:  
- git config -list  
+ **git config -list**    
  
