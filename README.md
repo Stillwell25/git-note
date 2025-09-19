@@ -1,6 +1,6 @@
 # Git Tutorial
 
-1.Cấu hình Git  
+1. Cấu hình Git  
 - Cấu hình Git  
  Lấy và đặt các biến cấu hình để kiểm soát tất cả các khía cạnh của giao diện và hoạt động của Git.  
  Đặt tên:  
@@ -17,3 +17,5 @@ Thiết lập bí danh cho mỗi lệnh:
 **git config –global alias.br branch**     
 **git config –global alias.ci commit**    
 **git config –global alias.st status**    
+
+2. Bắt đầu một dự án
