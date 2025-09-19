@@ -51,4 +51,26 @@ Theo dõi các thay đổi giữa hai lần commit:
 Hiển thị trạng thái của thư mục làm việc và vùng dàn dựng.  
 **git status**  
 -  Git show Hiển thị các đối tượng:
-git show
+**git show**
+
+5. Lịch sử commit
+Git log
+Hiển thị các commit gần đây nhất và trạng thái của phần đầu:
+git log
+Hiển thị đầu ra dưới dạng một commit trên mỗi dòng:
+git log -oneline
+Hiển thị các file đã được sửa đổi:
+git log –stat
+Hiển thị các file đã sửa đổi với vị trí :
+git log -p
+Git blu
+Hiển thị sửa đổi trên mỗi dòng của file:
+git blu <tên file>
+
+6. file bỏ qua(gitignore)
+.gitignore
+Chỉ định các file không được theo dõi mình muốn mà Git nên bỏ qua.
+Tạo .gitignore:
+touch .gitignore
+Liệt kê các file bị bỏ qua:
+git ls-files -i –exclude-standard
