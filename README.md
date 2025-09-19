@@ -35,3 +35,20 @@ Tạo kho lưu trữ cục bộ:
 - **Git commit**  
 **Ghi lại** hoặc chụp nhanh các file một cách vĩnh viễn trong lịch sử phiên bản **với một tin nhắn.**  
   - **git commit -m “Tin nhắn của commit”** 
+
+4. Theo dõi các thay đổi
+-  Git diff  
+Theo dõi các thay đổi chưa được dàn dựng: $ git diff  
+Theo dõi các thay đổi đã được dàn dựng nhưng chưa được commit:  
+**git diff –staged**  
+Theo dõi các thay đổi sau khi commit một file:  
+**git diff HEAD**  
+Theo dõi các thay đổi giữa hai lần commit:  
+**git diff branch**  
+-  Git Diff:  
+**git diff <nhánh 2>**  
+- **Git status:**  
+Hiển thị trạng thái của thư mục làm việc và vùng dàn dựng.  
+**git status**  
+-  Git show Hiển thị các đối tượng:
+git show
