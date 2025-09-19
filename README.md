@@ -25,3 +25,13 @@ Tạo kho lưu trữ cục bộ:
 - **Git clone**   
 **Tạo bản sao cục bộ** của kho lưu trữ máy chủ.  
 **git clone**  
+
+3. Thay đổi cục bộ
+- **Git add**
+**Thêm file** vào vùng dàn dựng (Chỉ mục – index):  
+**git add Tên file**  
+**Thêm tất cả file** của kho vào vùng dàn (Chỉ mục):  
+**git add .**  
+- Git commit  
+**Ghi lại** hoặc chụp nhanh các file một cách vĩnh viễn trong lịch sử phiên bản **với một tin nhắn.**  
+  - **git commit -m “Tin nhắn của commit”** 
