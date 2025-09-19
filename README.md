@@ -19,9 +19,9 @@ Thiết lập bí danh cho mỗi lệnh:
 **git config –global alias.st status**    
 
 2. Bắt đầu một dự án  
-- Git init  
+- **Git init**    
 Tạo kho lưu trữ cục bộ:  
 **git init**  
-- Git clone  
+- **Git clone**   
 **Tạo bản sao cục bộ** của kho lưu trữ máy chủ.  
 **git clone**  
