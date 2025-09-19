@@ -32,6 +32,6 @@ Tạo kho lưu trữ cục bộ:
 **git add Tên file**  
 **Thêm tất cả file** của kho vào vùng dàn (Chỉ mục):  
 **git add .**  
-- Git commit  
+- **Git commit**  
 **Ghi lại** hoặc chụp nhanh các file một cách vĩnh viễn trong lịch sử phiên bản **với một tin nhắn.**  
   - **git commit -m “Tin nhắn của commit”** 
