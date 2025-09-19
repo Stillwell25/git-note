@@ -50,27 +50,115 @@ Theo dõi các thay đổi giữa hai lần commit:
 - **Git status:**  
 Hiển thị trạng thái của thư mục làm việc và vùng dàn dựng.  
 **git status**  
--  Git show Hiển thị các đối tượng:
-**git show**
+-  Git show Hiển thị các đối tượng:  
+**git show**  
 
-5. Lịch sử commit
-Git log
-Hiển thị các commit gần đây nhất và trạng thái của phần đầu:
-git log
-Hiển thị đầu ra dưới dạng một commit trên mỗi dòng:
-git log -oneline
-Hiển thị các file đã được sửa đổi:
-git log –stat
-Hiển thị các file đã sửa đổi với vị trí :
-git log -p
-Git blu
-Hiển thị sửa đổi trên mỗi dòng của file:
-git blu <tên file>
+5. Lịch sử commit  
+- Git log  
+Hiển thị các commit gần đây nhất và trạng thái của phần đầu:  
+**git log**    
+Hiển thị đầu ra dưới dạng một commit trên mỗi dòng:  
+**git log -oneline**  
+Hiển thị các file đã được sửa đổi:  
+**git log –stat**  
+Hiển thị các file đã sửa đổi với vị trí :  
+**git log -p**  
+- Git blu  
+Hiển thị sửa đổi trên mỗi dòng của file:  
+**git blu <tên file>**  
 
-6. file bỏ qua(gitignore)
-.gitignore
-Chỉ định các file không được theo dõi mình muốn mà Git nên bỏ qua.
-Tạo .gitignore:
-touch .gitignore
-Liệt kê các file bị bỏ qua:
-git ls-files -i –exclude-standard
+6. file bỏ qua(gitignore)  
+- **gitignore**  
+Chỉ định các file không được theo dõi mình muốn mà Git nên bỏ qua.  
+- **Tạo .gitignore:**  
+**touch .gitignore**  
+- Liệt kê các file bị bỏ qua:  
+**git ls-files -i –exclude-standard**  
+
+7. Phân nhánh  
+- Git branch Tạo nhánh:  
+**git branch**  
+Danh sách nhánh: **git branch –list**    
+
+Xóa nhánh: **git branch -d**   
+
+Xóa nhánh từ xa: **git push origin -delete**  
+
+Đổi tên nhánh: **git branch -m**  
+
+- **Git checkout**  
+Chuyển đổi giữa các nhánh trong kho lưu trữ.  
+Chuyển sang một chi nhánh cụ thể: **git checkout**  
+Tạo một chi nhánh mới và chuyển sang nó: **git checkout -b**   
+Đổi nhánh từ xa: **git checkout -b <ten_nhanh_local> origin/<ten_nhanh_remote>**  
+
+- **Git stash**  
+Chuyển các nhánh mà không cần commit nhánh hiện tại. Lưu trữ công việc hiện tại: **git stash**  
+Lưu trữ bằng tin nhắn: git stash save **"tin_nhan"**  
+Kiểm tra các kho lưu trữ: **git stash list**  
+Áp dụng lại các thay đổi mà bạn vừa lưu trữ : **git stash apply**  
+Theo dõi các kho lưu trữ và các thay đổi của chúng: **git stash show:**  
+Áp dụng lại các commit trước đó: **git stash pop**  
+Xóa gần đây nhất stash from the queue: **git stash drop**  
+Xóa tất cả các kho lưu trữ có sẵn cùng một lúc: **git stash clear**  
+Làm việc trên một nhánh riêng biệt: **git stash branch**  
+- **Git cherry pic**  
+Áp dụng các thay đổi bởi một số commit hiện có: **git cherry-pick**  
+
+8. Hợp nhất  
+- **Git merge**  
+Hợp nhất các nhánh: **git merge**  
+Hợp nhất commit được chỉ định với chi nhánh hiện đang hoạt động: **git merge**  
+- **Git rebase**  
+Áp dụng một chuỗi các commit từ các nhánh khác nhau thành một commit cuối cùng. **git rebase**  
+Tiếp tục quá trình khôi phục : **git rebase -continue**    
+Hủy quá trình khôi phục: **git rebase –skip**   
+- **Git tương tác rebase**    
+Cho phép các thao tác khác nhau như chỉnh sửa, viết lại, sắp xếp lại, v.v. trên các commit hiện có.  
+**git rebase -i**    
+
+9. Làm việc từ xa   
+- **Git remote**   
+Kiểm tra cấu hình của máy chủ từ xa: $ git remote -v  
+Thêm từ xa cho kho: **git remote add**      
+- Tìm nạp dữ liệu từ máy chủ từ xa: **git fetch**   
+Xóa kết nối từ xa khỏi kho: **git remote rm**     
+Đổi tên máy chủ từ xa: **git remote rename <tên_cũ> <tên_mới>**    
+Hiển thị thông tin bổ sung về một điều khiển từ xa cụ thể: $ git remote show    
+Thay đổi điều khiển từ xa: **git remote set-url <remote-name> <new-url>**   
+- **Git origin main**   
+Đẩy dữ liệu đến máy chủ từ xa: **git push origin main**   
+Lấy dữ liệu từ máy chủ từ xa: **git pull origin main**   
+
+10. Cập nhật với Push    
+- **Git push**   
+Chuyển các commit từ kho lưu trữ cục bộ của bạn đến một máy chủ từ xa: **git push origin main**   
+- Buộc đẩy dữ liệu: **git push -f**   
+Xóa nhánh từ xa bằng lệnh đẩy: **git push origin -delete <branch>**   
+
+11. Cập nhật với Pull   
+- **Git pull**   
+Kéo(lấy) dữ liệu từ máy chủ: **git pull origin main**  
+Lấy một nhánh từ xa: **git pull**  
+- **Git fetch**  
+Tải xuống các nhánh và thẻ từ một hoặc nhiều kho. Tìm nạp(fetch) kho lưu trữ từ xa:  
+**git fetch <repository Url>**  
+- Tìm nạp một nhánh cụ thể: **git fetch**  
+Tìm nạp tất cả các nhánh đồng thời: **git fetch -all**  
+Đồng bộ hóa kho lưu trữ cục bộ: **git fetch origin**  
+
+12. Hoàn lại thay đổi  
+- **Git hoàn lại**  
+Hoàn lại các thay đổi: **git revert**  
+Hoàn lại một commit cụ thể: **git revert <commit-hash>**  
+- **Git reset**  
+Đặt lại các thay đổi: **git reset -hard**  
+**git reset -soft**  
+**git reset –mixed**  
+
+13. Xóa file  
+**Git rm**  
+Xóa file khỏi cây làm việc và khỏi chỉ mục:  
+**git rm <tên file>**  
+Xóa file khỏi Git Nhưng giữ file trong kho lưu trữ cục bộ của bạn:  
+**git rm –cached**  
